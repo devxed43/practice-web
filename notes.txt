@@ -1,58 +1,13 @@
-body {
-  font-family: Arial, sans-serif;
-  background: white;
-}
+media queries for different layouts at different screen sizes
 
-h3 {
-  /* minimum, preferred, max size */
-  font-size: clamp(10px, 4vw, 82px);
-}
+flexbox: simple one dimensional layouts for rows and columns.
+grid: complex 2 dimensional layouts;
 
-/* Monitor Size - when the screen size hits a minimum width of 1200 and above, screen will turn bluea*/
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 18px;
-    background: #9dc9d6;
-  }
-}
+general rule of thumb for each paradigms:
+    grid for overall layouts
+    flexbox for smaller components or parts of those sections
 
-/* Laptop Size - when the screen hits 992px and up to 1199px it will be green */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  body {
-    font-size: 16px;
-    background: #a0daa9;
-  }
-}
+you flex wrap on the container and the children will 
+flex wrap according to the resizing of the container
 
-/* Tablet Size(Landscape) */
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 14px;
-    background: #f7dcb4;
-  }
-}
-
-/* Tablet Size (Portrat) */
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  body {
-    font-size: 14px;
-    background: #f7b5c4;
-  }
-}
-
-/* Smartphone Size (landscape) */
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  body {
-    font-size: 12px;
-    background: #c2a1f7;
-  }
-}
-
-/* Smartphone Size portrait - Yellow up until the maximum width of the screen hits 320px*/
-@media screen and (max-width: 320px) {
-  body {
-    font-size: 12px;
-    background: #ffe0a9;
-  }
-}
+you mkae the sidebars static px width and the center main is flex 1 to be dynamic
