@@ -13,3 +13,5 @@ flex wrap according to the resizing of the container
 you mkae the sidebars static px width and the center main is flex 1 to be dynamic
 
 nth-child selector can create alternating layouts
+
+flexbox: you don't need media queries
